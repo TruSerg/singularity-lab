@@ -11,11 +11,15 @@
 	<script src="./js/modal.js" defer></script>
 	<script src="./js/scroll.js" defer></script>
 	<script src="./js/links.js" defer></script>
+	<script src="./js/sendMail.js" defer></script>
 	<title>Singularity lab</title>
 </head>
 <body>
 	<div class="wrapper">
-		<button class="modal__show">к</button>
+		<div class="modal__show">
+			<button class="modal__show-btn">к</button>
+		</div>
+		
 		<!-- Header -->
 
 		<div class="header">
@@ -114,10 +118,10 @@
 								<div class="contacts__form-item">
 									<input id="formPhone" name="phone" placeholder="Телефон" class="contacts__form-input">
 								</div>
-								<div class="contacts__form-item">
-									<textarea name="message" id="formMessage" class="contacts__form-input">Введите ваше сообщение</textarea>
-								</div>
-								<span><button type="submit">send</button></span>															
+								<div class="contacts__form-item contacts__form-item--flex">
+									<textarea name="message" id="formMessage" class="contacts__form-input" placeholder="Введите ваше сообщение"></textarea>									
+								</div>								
+								<button class="contacts__form-btn"type="submit"><img class="contacts__form-btn-img" src="./img/send.png" alt="send"></button>
 						</form>
 					</div>
 				</div>
@@ -130,8 +134,8 @@
 			<div class="container">
 				<div class="footer__body">
 					<span class="footer__text">ооо «лаборатория дизайна» г. Минск, ул. мележа 5\2</span>
-				 	<span class="footer__text">+375 33 990 3007</span>
-				 	<span class="fooetr__text">lab.singulari@gnail.com</span>
+				 	<span class="footer__text"><a class="footer__tel" href="#">+375 33 990 3007</a></span>
+				 	<span class="fooetr__text">lab.singulari@gmail.com</span>
 				</div>				
 			</div>
 		</footer>
@@ -139,22 +143,22 @@
 		<div class="modal hidden">
 			<div class="overlay"></div>
 			<div class="modal__wrapper">
-				<span class="modal__text-bold"><a href="#">брендинг. ребрендинг.</a></span>
-				<span class="modal__text-light"><a href="#">influecer marketing.</a></span>
-				<span class="modal__text-bold"><a href="#">транзитная реклама.</a></span>
-				<span class="modal__text-light"><a href="#">наружная реклама.</a></span>
-				<span class="modal__text-bold"><a href="#">внутренняя реклама.</a></span>
-				<span class="modal__text-light"><a href="#">логотип.</a></span>
-				<span class="modal__text-bold"><a href="#">упаковка. брендбук.</a></span>
-				<span class="modal__text-light"><a href="#">айдентика.</a></span>
-				<span class="modal__text-bold"><a href="#">визитки. брашуры. каталоги.</a></span>
-				<span class="modal__text-light"><a href="#">нэйиминг.</a></span>
-				<span class="modal__text-bold"><a href="#">слоган. рекламный текст.</a></span>
-				<span class="modal__text-light"><a href="#">приложения ios.</a></span>
-				<span class="modal__text-bold"><a href="#">приложения android.</a></span>
-				<span class="modal__text-light"><a href="#">лэндинг.</a></span>
-				<span class="modal__text-bold"><a href="#">сайт. разработка приложений.</a></span>
-				<span class="modal__text-light"><a href="#">техническая поддержка.</a></span>
+				<span class="modal__text-bold"><a class="modal__link" href="#">брендинг. ребрендинг.</a></span>
+				<span class="modal__text-light"><a class="modal__link" href="#">influecer marketing.</a></span>
+				<span class="modal__text-bold"><a class="modal__link" href="#">транзитная реклама.</a></span>
+				<span class="modal__text-light"><a class="modal__link" href="#">наружная реклама.</a></span>
+				<span class="modal__text-bold"><a class="modal__link" href="#">внутренняя реклама.</a></span>
+				<span class="modal__text-light"><a class="modal__link" href="#">логотип.</a></span>
+				<span class="modal__text-bold"><a class="modal__link" href="#">упаковка. брендбук.</a></span>
+				<span class="modal__text-light"><a class="modal__link" href="#">айдентика.</a></span>
+				<span class="modal__text-bold"><a class="modal__link" href="#">визитки. брашуры. каталоги.</a></span>
+				<span class="modal__text-light"><a class="modal__link" href="#">нэйиминг.</a></span>
+				<span class="modal__text-bold"><a class="modal__link" href="#">слоган. рекламный текст.</a></span>
+				<span class="modal__text-light"><a class="modal__link" href="#">приложения ios.</a></span>
+				<span class="modal__text-bold"><a class="modal__link" href="#">приложения android.</a></span>
+				<span class="modal__text-light"><a class="modal__link" href="#">лэндинг.</a></span>
+				<span class="modal__text-bold"><a class="modal__link" href="#">сайт. разработка приложений.</a></span>
+				<span class="modal__text-light"><a class="modal__link" href="#">техническая поддержка.</a></span>
 			</div>	
 			</div>
 		</div>
