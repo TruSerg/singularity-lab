@@ -8,6 +8,9 @@
    <link rel="stylesheet" href="css/style.css" />
 	<link rel="stylesheet" href="css/stylesheet.css" />
 	<script src="./js/burger.js" defer></script>
+	<script src="./js/modal.js" defer></script>
+	<script src="./js/scroll.js" defer></script>
+	<script src="./js/links.js" defer></script>
 	<title>Singularity lab</title>
 </head>
 <body>
@@ -27,13 +30,13 @@
 					<nav class="header__menu">
 						<ul class="header__nav">
 							<li>
-								<a class="header__nav-item" href="#">о нас</a>
+								<a class="header__nav-item" href="#main">о нас</a>
 							</li>
 							<li>
-								<a class="header__nav-item" href="#">услуги</a>
+								<a class="header__nav-item" href="#services">услуги</a>
 							</li>
 							<li>
-								<a class="header__nav-item" href="#">конакты</a>
+								<a class="header__nav-item" href="#contacts">конакты</a>
 							</li>
 						</ul>
 					</nav>
@@ -41,18 +44,20 @@
 
 				<!-- Main -->
 
-				<div class="main__body">
-					<div class="main__content">
-						<h2 class="main__title title--repeat">Лаборатория <br> дизайна</h2>
-						<p class="main__text text--repeat">Мы профессиональные профессианалы. Наша компания афигеть какая крутая. Вы не пожалеете что обратились к нам за вообще чем угодно. Реальные сроки, реальные вещи. Приходите.</p>						
-					</div>					
-				</div>										
+				<div class="main" id="main">
+					<div class="main__body">
+						<div class="main__content">
+							<h2 class="main__title title--repeat">Лаборатория <br> дизайна</h2>
+							<p class="main__text text--repeat">Мы профессиональные профессианалы. Наша компания афигеть какая крутая. Вы не пожалеете что обратились к нам за вообще чем угодно. Реальные сроки, реальные вещи. Приходите.</p>						
+						</div>					
+					</div>
+				</div>											
 			</div>
 		</div>
 		
 		<!-- Services -->
 
-		<section class="services">
+		<section class="services" id="services">
 			<div class="container">
 				<div class="services__body">
 
@@ -98,7 +103,7 @@
 
 		<!-- Contacts -->
 
-		<section class="contacts">
+		<section class="contacts" id="contacts">
 			<div class="container">
 				<div class="contacts__body">
 					<div class="contacts__form">
@@ -131,8 +136,9 @@
 			</div>
 		</footer>
 
-		<div class="modal">
-			<div class="container">
+		<div class="modal hidden">
+			<div class="overlay"></div>
+			<div class="modal__wrapper">
 				<span class="modal__text-bold"><a href="#">брендинг. ребрендинг.</a></span>
 				<span class="modal__text-light"><a href="#">influecer marketing.</a></span>
 				<span class="modal__text-bold"><a href="#">транзитная реклама.</a></span>
@@ -148,9 +154,10 @@
 				<span class="modal__text-bold"><a href="#">приложения android.</a></span>
 				<span class="modal__text-light"><a href="#">лэндинг.</a></span>
 				<span class="modal__text-bold"><a href="#">сайт. разработка приложений.</a></span>
-				<span class="modal__text-light"><a href="#">техническая поддержка.</a></span>	
+				<span class="modal__text-light"><a href="#">техническая поддержка.</a></span>
+			</div>	
 			</div>
 		</div>
-	</div>
+	<script src="https://cdn.jsdelivr.net/npm/seamless-scroll-polyfill@latest/lib/bundle.min.js"></script>
 </body>
 </html>
