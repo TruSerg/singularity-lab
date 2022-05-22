@@ -1,41 +1,4 @@
-/* montserrat-100 - latin_cyrillic */
-@font-face {
-	font-family: 'Montserrat';
-	font-style: normal;
-	font-weight: 100;
-	src: local('Montserrat'),
-		  url('../fonts/montserrat-v24-latin_cyrillic-100.woff2') format('woff2'), 
-		  url('../fonts/montserrat-v24-latin_cyrillic-100.woff') format('woff');
- }
-
-/* montserrat-regular - latin_cyrillic */
-@font-face {
-	font-family: 'Montserrat';
-	font-style: normal;
-	font-weight: 400;
-	src: local('Montserrat'),
-		  url('../fonts/montserrat-v24-latin_cyrillic-regular.woff2') format('woff2'),
-		  url('../fonts/montserrat-v24-latin_cyrillic-regular.woff') format('woff'); 
- }
- /* montserrat-900 - latin_cyrillic */
- @font-face {
-	font-family: 'Montserrat';
-	font-style: normal;
-	font-weight: 900;
-	src: local('Montserrat-ExtraBold'),
-		  url('../fonts/montserrat-v24-latin_cyrillic-900.woff2') format('woff2'),
-		  url('../fonts/montserrat-v24-latin_cyrillic-900.woff') format('woff'); 
- }
-
- @font-face {
-	font-family: 'DOCKER ONE';
-	font-weight: normal;
-	font-style: normal;
-	src: url('../fonts/subset-DOCKERONE.woff2') format('woff2'),
-		 url('../fonts/subset-DOCKERONE.woff') format('woff');	
-}
-
- .container {
+.container {
 	max-width: 1170px;
 	padding: 0 15px;
 	margin: 0 auto;
@@ -46,6 +9,10 @@ html, body {
 	box-sizing: border-box;
 	font-family: Montserrat, sans-serif;
 	font-weight: 400;
+ }
+
+ body._lock {
+	 overflow: hidden;
  }
  
  *,

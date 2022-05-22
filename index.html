@@ -6,19 +6,24 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/default.css" />
    <link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/stylesheet.css" />
+	<script src="./js/burger.js" defer></script>
 	<title>Singularity lab</title>
 </head>
 <body>
 	<div class="wrapper">
-		
+		<button class="modal__show">к</button>
 		<!-- Header -->
 
 		<div class="header">
 			<div class="container container--main">
-				<div class="header__body">
+				<div class="header__body">					
 					<a href="#">
 						<img class="header__logo" src="./img/logo.png" alt="logo">
-					</a>					
+					</a>
+					<div class="header__menu-icon">
+						<span></span>
+					</div>					
 					<nav class="header__menu">
 						<ul class="header__nav">
 							<li>
@@ -125,6 +130,27 @@
 				</div>				
 			</div>
 		</footer>
+
+		<div class="modal">
+			<div class="container">
+				<span class="modal__text-bold"><a href="#">брендинг. ребрендинг.</a></span>
+				<span class="modal__text-light"><a href="#">influecer marketing.</a></span>
+				<span class="modal__text-bold"><a href="#">транзитная реклама.</a></span>
+				<span class="modal__text-light"><a href="#">наружная реклама.</a></span>
+				<span class="modal__text-bold"><a href="#">внутренняя реклама.</a></span>
+				<span class="modal__text-light"><a href="#">логотип.</a></span>
+				<span class="modal__text-bold"><a href="#">упаковка. брендбук.</a></span>
+				<span class="modal__text-light"><a href="#">айдентика.</a></span>
+				<span class="modal__text-bold"><a href="#">визитки. брашуры. каталоги.</a></span>
+				<span class="modal__text-light"><a href="#">нэйиминг.</a></span>
+				<span class="modal__text-bold"><a href="#">слоган. рекламный текст.</a></span>
+				<span class="modal__text-light"><a href="#">приложения ios.</a></span>
+				<span class="modal__text-bold"><a href="#">приложения android.</a></span>
+				<span class="modal__text-light"><a href="#">лэндинг.</a></span>
+				<span class="modal__text-bold"><a href="#">сайт. разработка приложений.</a></span>
+				<span class="modal__text-light"><a href="#">техническая поддержка.</a></span>	
+			</div>
+		</div>
 	</div>
 </body>
 </html>

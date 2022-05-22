@@ -1,0 +1,43 @@
+@font-face {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 100;
+	src: local('Montserrat'),
+		  url('../fonts/montserrat-v24-latin_cyrillic-100.woff2') format('woff2'), 
+		  url('../fonts/montserrat-v24-latin_cyrillic-100.woff') format('woff');
+ }
+
+
+@font-face {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Montserrat'),
+		  url('../fonts/montserrat-v24-latin_cyrillic-regular.woff2') format('woff2'),
+		  url('../fonts/montserrat-v24-latin_cyrillic-regular.woff') format('woff'); 
+ }
+
+ @font-face {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 900;
+	src: local('Montserrat-ExtraBold'),
+		  url('../fonts/montserrat-v24-latin_cyrillic-900.woff2') format('woff2'),
+		  url('../fonts/montserrat-v24-latin_cyrillic-900.woff') format('woff'); 
+ }
+
+ @font-face {
+	font-family: 'DOCKER ONE';
+	font-weight: normal;
+	font-style: normal;
+	src: url('../fonts/subset-DOCKERONE.woff2') format('woff2'),
+		 url('../fonts/subset-DOCKERONE.woff') format('woff');	
+}
+
+@font-face {
+	font-family: 'DOCKER TWO';
+	font-weight: normal;
+	font-style: normal;
+	src: url('../fonts/subset-DOCKERTWO.woff2') format('woff2'),
+		 url('../fonts/subset-DOCKERTWO.woff') format('woff');
+}
